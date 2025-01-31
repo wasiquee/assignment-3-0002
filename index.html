@@ -8,26 +8,31 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
-
+<style>
+    .color{color: darkgreen;}
+</style>
 </head>
 <body>
-    <header>
-        <nav class="w-full">
-            <div class="grid grid-cols-4  place-content-around">
+    <header class="w-full">
+        <nav class="grid grid-cols-4  place-content-between ">
+            
                 <div> <img src="./c2-assets/logo-header.png" alt=""></div>
                 <div class="text-lg-4xl"> <p> Products      Services     Contact Us</p> </div>
-                <div class="grid lg:grid-cols-3 " >
+                <div class="grid lg:grid-cols-3">
                     <div class="grid grid-cols-2"> 
                         <div class="w-7"><img src="./c2-assets/magnifying-glass-solid.svg" alt=""></div>
                     <div class="w-7"><img src="./c2-assets/cart-shopping-solid.svg" alt=""></div>
                 </div>
                     
-                    <div><button class="bg-white rounded-sm border-spacing-1">Login</button></div>
-                    <div class="bg-lime-600 rounded-l-lg max-h-10">Register</div>
-            </div>
-            </div>
+                    <div><button class="bg-white rounded-sm border-solid border-lime-500 text-center">Login</button></div>
+                    <div class="bg-lime-600 rounded max-h-10 text-center ">Register</div>
+                </div>
         </nav>
-
+<section>
+    <h1 class="text-5xl text-center font-bold">Freshness <span class="color">You Can</span> <br>
+        <span class="color"> Count</span> On, Prices You’ll Love!</h1> <br><br>
+        <p class="text-1xl text-slate-400 text-center"> Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+</section>
     </header>
 
 
