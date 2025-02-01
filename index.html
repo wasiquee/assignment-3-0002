@@ -10,32 +10,42 @@
 
 <style>
     .color{color: rgb(106, 173, 106);}
-    .color-2{ color: darkgoldenrod;}
+    .color-2{ color: rgb(232, 227, 80);}
+    @media (min-width: 576px) {
+      
+      .hamburger { display: none; }
+      
+    } 
+    
+      @media (max-width : 576px){
+        .nai{ display: none;}
+      }  
     
 </style>
 </head>
 <body>
-    <header  class=" bg-gradient-to-r from-blue-100 to-cyan-200">
+    <header  class=" bg-gradient-to-r from-blue-100 to-cyan-200 animate-pulse mt-0">
        <nav class="flex justify-between lg:px-20 py-10">
         <div>
             <img src="./c2-assets/logo-header.png" alt="">
         </div>
         <div class="flex gap-1 lg:gap-4">
-            <div>Products</div>
-            <div>Services</div>
-            <div>Contact Us</div>
+            <div class="nai">Products</div>
+            <div class="nai">Services</div>
+            <div class="nai">Contact Us</div>
         </div>
         <div class="flex lg:gap-3">
-            <div><img src="./c2-assets/icons8-magnifying-glass-40.png" alt=""></div>
-            <div><img src="./c2-assets/icons8-shopping-cart-40.png" alt=""></div>
-            <div><button class="bg-slate-100 text-slate-950 rounded-lg text-center px-2 py-2">Login</button></div>
-            <div><button class="bg-lime-800 text-neutral-50 rounded-lg text-center px-2 py-2">Register</button></div>
+            <div class="nai"><img src="./c2-assets/icons8-magnifying-glass-40.png" alt=""></div>
+            <div class="nai"><img src="./c2-assets/icons8-shopping-cart-40.png" alt=""></div>
+            <div><button class="bg-slate-100 text-slate-950 rounded-lg text-center px-2 py-2 nai">Login</button></div>
+            <div><button class="bg-lime-800 text-neutral-50 rounded-lg text-center px-2 py-2 nai">Register</button></div>
+            <div class="hamburger text-4xl text-lime-600">&#9776;</div>
         </div>
        </nav>
 
- <div class="text-center lg:text-center">
+ <div class="text-center lg:text-center ">
 
-        <div ><h1 class="text-5xl  font-bold">Freshness <span class="color">You Can</span> <br>
+        <div class="animate-bounce"><h1 class="text-5xl  font-bold">Freshness <span class="color">You Can</span> <br>
         <span class="color"> Count</span> On, Prices You’ll Love!</h1> </div> <br><br>
 
         <div><p class="text-1xl text-slate-400 "> Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
@@ -69,17 +79,17 @@
     <section class="mx-10 my-7 bg-stone-200 lg:mx-50 lg:my-20">
         <h3 class="text-3xl font-bold color px-4 py-10 lg:px-10 lg:py-20 "> Popular Products</h3><br>
         <div class="lg:flex justify-center grid grid-cols-1 lg:grid-cols-2 lg:py-20">
-            <div class="flex bg-gradient-to-r from-green-300 to-green-800 my-13 lg:my-35 mx-10">
+            <div class="flex bg-gradient-to-r from-green-300 to-green-800 my-13 px-5 py-5 rounded-xl lg:my-35 mx-10 lg:px-10 lg:py-10 lg:rounded-2xl">
                 <div><h3 class="text-3xl font-bold color-2 "> 30% Off</h3>
                 <p class="text-2xl text-slate-700 py-3 lg:py-5">Picked with care, delivered with love!</p>
-                <button class="text-black bg-white  rounded h-10 text-center py-2 px-2 lg:py-2 lg:py-2 ">Buy Now</button></div>
+                <button class="text-black bg-white  rounded h-10 text-center py-2 px-2 lg:px-6 lg:py-2 lg:font-bold">Buy Now</button></div>
                 <div><img src="./c2-assets/vegetable-offer.png" alt=""></div>
 
             </div>
-            <div class="grid grid-cols-3 gap-2 p-2 bg-white shadow-lg rounded-lg">
-                <div class="p-4 border rounded-xl flex justify-center gap-2">
-                    <div>
-                        <img src="./c2-assets/onion.png" alt="">
+            <div class="grid grid-cols-3 gap-2 p-2  rounded-lg">
+                <div class="p-4 border bg-white rounded-xl flex justify-center gap-2">
+                    <div class="bg-stone-300 rounded-xl">
+                        <img src="./c2-assets/tomato.png" alt="">
                     </div>
                     <div>
                     <div class=" flex justify-center gap-2">
@@ -90,13 +100,13 @@
                             4.5
                         </div> </div>
                         <div>
-                        <h6 class="font-bold">ONION 1KG</h6>
+                        <h6 class="font-bold">TOMATO 1KG</h6>
                         <p class="font-bold">100 TK</p>
                     </div>
                 </div>
                 </div>
-                <div class="p-4 border rounded-xl flex justify-center gap-2">
-                    <div>
+                <div class="p-4 bg-white border rounded-xl flex justify-center gap-2">
+                    <div class="bg-stone-300 rounded-xl">
                         <img src="./c2-assets/onion.png" alt="">
                     </div>
                     <div>
@@ -113,9 +123,9 @@
                     </div>
                 </div>
                 </div>
-                <div class="p-4 border rounded-xl flex justify-center gap-2">
-                    <div>
-                        <img src="./c2-assets/onion.png" alt="">
+                <div class="p-4 bg-white border rounded-xl flex justify-center gap-2">
+                    <div class="bg-stone-300 rounded-xl">
+                        <img src="./c2-assets/potato.png" alt="">
                     </div>
                     <div>
                     <div class="flex justify-center gap-2">
@@ -126,14 +136,32 @@
                             4.5
                         </div> </div>
                         <div>
-                        <h6 class="font-bold">ONION 1KG</h6>
+                        <h6 class="font-bold">POTATO 1KG</h6>
                         <p class="font-bold">100 TK</p>
                     </div>
                 </div>
                 </div>
         
-                <div class="p-4 border rounded-xl flex justify-center gap-2">
+                <div class="p-4 bg-white border rounded-xl flex justify-center gap-2">
+                    <div class="bg-stone-300 rounded-xl">
+                        <img src="./c2-assets/tomato.png" alt="">
+                    </div>
                     <div>
+                    <div class="flex justify-center gap-2">
+                        <div>
+                            <img src="./c2-assets/icons8-star-20.png" alt="">
+                        </div>
+                        <div>
+                            4.5
+                        </div> </div>
+                        <div>
+                        <h6 class="font-bold">TOMATO 1KG</h6>
+                        <p class="font-bold">100 TK</p>
+                    </div>
+                </div>
+                </div>
+                <div class="p-4 bg-white border rounded-xl flex justify-center gap-2">
+                    <div class="bg-stone-300 rounded-xl">
                         <img src="./c2-assets/onion.png" alt="">
                     </div>
                     <div>
@@ -150,9 +178,9 @@
                     </div>
                 </div>
                 </div>
-                <div class="p-4 border rounded-xl flex justify-center gap-2">
-                    <div>
-                        <img src="./c2-assets/onion.png" alt="">
+                <div class="p-4 bg-white border rounded-xl flex justify-center gap-2">
+                    <div class="bg-stone-300 rounded-xl">
+                        <img src="./c2-assets/potato.png" alt="">
                     </div>
                     <div>
                     <div class="flex justify-center gap-2">
@@ -163,33 +191,15 @@
                             4.5
                         </div> </div>
                         <div>
-                        <h6 class="font-bold">ONION 1KG</h6>
-                        <p class="font-bold">100 TK</p>
-                    </div>
-                </div>
-                </div>
-                <div class="p-4 border rounded-xl flex justify-center gap-2">
-                    <div>
-                        <img src="./c2-assets/onion.png" alt="">
-                    </div>
-                    <div>
-                    <div class="flex justify-center gap-2">
-                        <div>
-                            <img src="./c2-assets/icons8-star-20.png" alt="">
-                        </div>
-                        <div>
-                            4.5
-                        </div> </div>
-                        <div>
-                        <h6 class="font-bold">ONION 1KG</h6>
+                        <h6 class="font-bold">POTATO 1KG</h6>
                         <p class="font-bold">100 TK</p>
                     </div>
                 </div>
                 </div>
         
-                <div class="p-4 border rounded-xl flex justify-center gap-2">
-                    <div>
-                        <img src="./c2-assets/onion.png" alt="">
+                <div class="p-4 bg-white border rounded-xl flex justify-center gap-2">
+                    <div class="bg-stone-300 rounded-xl">
+                        <img src="./c2-assets/potato.png" alt="">
                     </div>
                     <div>
                     <div class="flex justify-center gap-2">
@@ -200,14 +210,14 @@
                             4.5
                         </div> </div>
                         <div>
-                        <h6 class="font-bold">ONION 1KG</h6>
+                        <h6 class="font-bold">POTATO 1KG</h6>
                         <p class="font-bold">100 TK</p>
                     </div>
                 </div>
                 </div>
-                <div class="p-4 border rounded-xl flex justify-center gap-2">
-                    <div>
-                        <img src="./c2-assets/onion.png" alt="">
+                <div class="p-4 bg-white border rounded-xl flex justify-center gap-2">
+                    <div class="bg-stone-300 rounded-xl">
+                        <img src="./c2-assets/tomato.png" alt="">
                     </div>
                     <div>
                     <div class="flex justify-center gap-2">
@@ -218,13 +228,13 @@
                             4.5
                         </div> </div>
                         <div>
-                        <h6 class="font-bold">ONION 1KG</h6>
+                        <h6 class="font-bold">TOMATO 1KG</h6>
                         <p class="font-bold">100 TK</p>
                     </div>
                 </div>
                 </div>
-                <div class="p-4 border  rounded-xl flex justify-center gap-2">
-                    <div>
+                <div class="p-4 bg-white border  rounded-xl flex justify-center gap-2">
+                    <div class="bg-stone-300 rounded-xl">
                         <img src="./c2-assets/onion.png" alt="">
                     </div>
                     <div>
@@ -285,7 +295,7 @@
         </div>
 
     </Section>
-    <section class="-my-38  px-20 lg:px-80 py-30  ">
+    <section class=" -my-16 px-20 lg:px-80 py-10  ">
         <div class="bg-stone-300 flex justify-between rounded-md  px-3 py-4 lg:px-5 lg:py-7 lg:rounded-md">
             <div><img src="./c2-assets/vegetable-busket.png" alt=""></div>
             <div><h2 class="text-4xl">Get Grocery News!</h2>
@@ -298,7 +308,7 @@
 
     </main>  
 
-    <footer>
+    <footer >
         <div class="grid grid-cols-1 gap-4 lg:flex justify-between bg-lime-950 px-10 py-20 lg:px-20 lg:py-40 ">
             <div> <img src="./c2-assets/logo-footer.png" alt=""><br><p class="text-gray-400 text-xl">Discover a world of treats, toys, and essentials <br> handpicked for your furry friends</p></div>
             <div><p class="text-white text-2xl">Products</p>
